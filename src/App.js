@@ -4,6 +4,7 @@ import CurrentTime from "./components/CurrentTime";
 const App = () => {
   return (
     <div>
+      
       <CurrentTime />
     </div>
   );
