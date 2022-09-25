@@ -12,18 +12,17 @@ const CurrentTime = () => {
   const [time, setTime] = useState(hour);
 
   const changeTime = () => {
-    
     const newTime = new Date().toLocaleString("en-US", {
       hour: "numeric",
       minute: "numeric",
       second: "numeric",
       hour12: true,
-    })
+    });
     setTime(newTime);
   };
 
   setInterval(() => {
-    changeTime()
+    changeTime();
   }, 1000);
 
   return (
